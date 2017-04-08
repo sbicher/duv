@@ -1,14 +1,10 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {SearchService} from '../../services/SearchService';
+//import {Runner} from '../../app/runner';
+import { RunnerDetailsPage } from '../runner-details/runner-details';
 
 
-/**
- * Generated class for the Search page.
- *
- * See http://ionicframework.com/docs/components/#navigation for more info
- * on Ionic pages and navigation.
- */
 @IonicPage()
 @Component({
   selector: 'page-search',
@@ -32,12 +28,23 @@ export class SearchPage {
 
         this.searchService.search(this.searchText).subscribe(
 				data => {
-                    console.log(data);
+                    console.log("found data: " + data);
+
+                    // immer den letzten zurückgeben
+                    var foundRunner = data.runners[data.runners.length - 1];
+
+              //      ImpressumPage.runner.lastname = 'theo';
+
+            // ImpressumPage.runner = 'test';
+            	//var runner = data;
+          // 	console.log("data: " + data.firstname);
+            	var runnerDetailsParams = {"runner":foundRunner};
+                    this.navCtrl.push(RunnerDetailsPage,runnerDetailsParams);
                 },
                 err => {
                     console.log(err);
                 },
-                () => console.log('Movie Search Complete')
+                () => console.log('Suche wurde beendet...')
         	);
 
 

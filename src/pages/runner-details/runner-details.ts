@@ -4,20 +4,21 @@ import {Runner} from '../../app/runner';
 
 @IonicPage()
 @Component({
-  selector: 'page-impressum',
-  templateUrl: 'impressum.html',
+  selector: 'runner-details',
+  templateUrl: 'runner-details.html',
 })
 
 
 
-export class ImpressumPage {
-	//declare var runner : string;
+export class RunnerDetailsPage {
+	runner : Runner;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-
+  		this.runner = this.navParams.get("runner");
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad impressum: '+ this.navParams);
+
+    console.log('ionViewDidLoad Runner-Dateils: '+ this.runner.firstname);
   }
 }
