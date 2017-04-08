@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {Runner} from '../../app/runner';
 
-@IonicPage()
 @Component({
   selector: 'page-impressum',
   templateUrl: 'impressum.html',

@@ -5,7 +5,6 @@ import {SearchService} from '../../services/SearchService';
 import { RunnerDetailsPage } from '../runner-details/runner-details';
 
 
-@IonicPage()
 @Component({
   selector: 'page-search',
   templateUrl: 'search.html',
