@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import {Runner} from '../../app/runner';
+import { NavController, NavParams } from 'ionic-angular';
 
 @Component({
   selector: 'page-impressum',
@@ -10,8 +9,6 @@ import {Runner} from '../../app/runner';
 
 
 export class ImpressumPage {
-	//declare var runner : string;
-
   constructor(public navCtrl: NavController, public navParams: NavParams) {
 
   }

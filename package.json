@@ -1,7 +1,7 @@
 {
-  "name": "ionic-hello-world",
-  "author": "Ionic Framework",
-  "homepage": "http://ionicframework.com/",
+  "name": "DUV-Statistik-App",
+  "author": "Stefan Bicher",
+  "homepage": "http://d-u-v.org/",
   "private": true,
   "scripts": {
     "clean": "ionic-app-scripts clean",
@@ -41,5 +41,5 @@
     "ionic-plugin-keyboard"
   ],
   "cordovaPlatforms": [],
-  "description": "ionic2-todo: An Ionic project"
+  "description": "DUV-Statistik-App: Weiter laufen...."
 }
