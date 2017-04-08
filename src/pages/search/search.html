@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Suche</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+
+	 <div>
+      <ion-item>
+       <ion-input type="string"  style="border-width:3px;border-stlye:solid" placeholder="Suchbegriff (Läufer, Verein, Veranstaltung)" [(ngModel)]="searchText"></ion-input>
+        </ion-item> 
+
+         <button ion-button secondary (click)='startSearch()'>Suchen</button>
+      
+ <!--  <input type="text" style="width:200px" placeholder="Suchbegriff (Läufer, Verein, Veranstaltung)" ng-model="searchText" required />-->
+	<!--<button class="button" click()="startSearch()">Ergebnisse</button>-->
+  
+   </div>
+</ion-content>
