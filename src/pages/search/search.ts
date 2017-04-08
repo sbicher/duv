@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {SearchService} from '../../services/SearchService';
+
 
 /**
  * Generated class for the Search page.
@@ -11,11 +13,12 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 @Component({
   selector: 'page-search',
   templateUrl: 'search.html',
+ providers: [SearchService]
 })
 export class SearchPage {
 	searchText : any;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private searchService: SearchService) {
   }
 
   ionViewDidLoad() {
@@ -25,5 +28,18 @@ export class SearchPage {
 
   startSearch() {
         console.log('starting search: ' + this.searchText);
+      console.log ("service: " + this.searchService);
+
+        this.searchService.search(this.searchText).subscribe(
+				data => {
+                    console.log(data);
+                },
+                err => {
+                    console.log(err);
+                },
+                () => console.log('Movie Search Complete')
+        	);
+
+
     }
 }
