@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <widget id="com.ionicframework.ionic2todo750111" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-  <name>DUV-Statistik-App</name>
+  <name>DUV-Statistik</name>
   <description>Die Statistik-App der Deutschen Ultramarathon Vereinigung</description>
   <author email="redaktion@d-u-v.org" href="http://www.d-u-v.org">DUV</author>
   <content src="index.html"/>
