@@ -21,5 +21,13 @@ Requirment: Installed SDK (e.g. Android SDK)
 
 For Android:
 
-On the commandline type `
-ionic build android --prod`
+On the commandline type 
+`cordova platform add android` (only on first time)
+
+(currently neccessary for splash and icon :-/)
+
+Copy <PROJECT_HOME>/resources/splash_30.png to each <PROJECT_HOME>/platforms/android/res/<xxx>/screen.png
+
+Copy <PROJECT_HOME>/resources/icon.png to each <PROJECT_HOME>/platforms/android/res/<xxx>/icon.png
+
+`ionic build android --prod`
