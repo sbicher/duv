@@ -28,10 +28,11 @@ export class SearchPage {
 				data => {
                     console.log("found data: " + data);
 
-                    // immer den letzten zurückgeben
-                    var foundRunner = data.runners[data.runners.length - 1];
+
+                    //  always use the last found runner (demo data)
+                    var foundRunner = data.runners[data.runners.length - 1]; // TODO: show selection page
 	
-            	var runnerDetailsParams = {"runner":foundRunner};
+            	      var runnerDetailsParams = {"runner":foundRunner};
                     this.navCtrl.push(RunnerDetailsPage,runnerDetailsParams);
                 },
                 err => {

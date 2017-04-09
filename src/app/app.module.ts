@@ -11,6 +11,7 @@ import { SearchPage } from '../pages/search/search';
 import { RacesPage } from '../pages/races/races';
 import { DuvCupPage } from '../pages/duv-cup/duv-cup';
 import { RunnerDetailsPage } from '../pages/runner-details/runner-details';
+import { RaceDetailsPage } from '../pages/race-details/race-details';
 import { ImpressumPage } from '../pages/impressum/impressum';
 
 @NgModule({
@@ -21,6 +22,7 @@ import { ImpressumPage } from '../pages/impressum/impressum';
     RacesPage,
     DuvCupPage,
     RunnerDetailsPage,
+    RaceDetailsPage,
     ImpressumPage
   ],
   imports: [
@@ -36,6 +38,7 @@ import { ImpressumPage } from '../pages/impressum/impressum';
     RacesPage,
     DuvCupPage,
     RunnerDetailsPage,
+    RaceDetailsPage,
     ImpressumPage
   ],
   providers: [

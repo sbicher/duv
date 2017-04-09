@@ -3,6 +3,7 @@ import { NavController, NavParams } from 'ionic-angular';
 import {CalendarService} from '../../services/CalendarService';
 import {Race} from '../../model/Race';
 import {Settings} from '../../model/Settings';
+import {RaceDetailsPage} from '../race-details/race-details'
 
 @Component({
   selector: 'page-races',
@@ -58,5 +59,8 @@ export class RacesPage {
 
     showRaceDetails (race:Race) {
     	console.log ('race: ' + race.EventName);
+    	var raceDetailsParams = {"race":race};
+        this.navCtrl.push(RaceDetailsPage,raceDetailsParams);
+    	
     }
 }
