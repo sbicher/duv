@@ -7,5 +7,8 @@
   </ion-navbar>
 </ion-header>
 <ion-content padding>
-Folgende Rennen stehen demnächst im Kalender:
+<div>Folgende Rennen stehen demnächst im Kalender:</div>
+ <ion-list>
+        <ion-item *ngFor="let race of races">{{race.EventName}}</ion-item>
+    </ion-list>
 </ion-content>

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-import {Runner} from '../../app/runner';
+import {Runner} from '../../model/runner';
 
 @Component({
   selector: 'runner-details',
@@ -10,7 +10,7 @@ import {Runner} from '../../app/runner';
 
 
 export class RunnerDetailsPage {
-	runner : Runner;
+	private runner : Runner;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   		this.runner = this.navParams.get("runner");

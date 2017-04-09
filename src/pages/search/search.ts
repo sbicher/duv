@@ -30,12 +30,7 @@ export class SearchPage {
 
                     // immer den letzten zurückgeben
                     var foundRunner = data.runners[data.runners.length - 1];
-
-              //      ImpressumPage.runner.lastname = 'theo';
-
-            // ImpressumPage.runner = 'test';
-            	//var runner = data;
-          // 	console.log("data: " + data.firstname);
+	
             	var runnerDetailsParams = {"runner":foundRunner};
                     this.navCtrl.push(RunnerDetailsPage,runnerDetailsParams);
                 },
