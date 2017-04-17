@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import {SearchService} from '../../services/SearchService';
 import { RunnerDetailsPage } from '../runner-details/runner-details';
+import { RunnerListPage } from '../runner-list/runner-list';
+
 
 
 @Component({
@@ -30,10 +32,14 @@ export class SearchPage {
 
 
                     //  always use the last found runner (demo data)
-                    var foundRunner = data.runners[data.runners.length - 1]; // TODO: show selection page
-	
-            	      var runnerDetailsParams = {"runner":foundRunner};
-                    this.navCtrl.push(RunnerDetailsPage,runnerDetailsParams);
+                    if (data.runners.length == 1) {
+                      var foundRunner = data.runners[data.runners.length - 1]; // TODO: show selection page
+	             	      var  detailPageParams = {"runner":foundRunner};
+                      this.navCtrl.push(RunnerDetailsPage,detailPageParams);
+                    } else {
+                      var listPageParams = {"runners":data.runners};
+                      this.navCtrl.push(RunnerListPage,listPageParams);
+                    }
                 },
                 err => {
                     console.log(err);

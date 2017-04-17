@@ -8,9 +8,10 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { SearchPage } from '../pages/search/search';
-import { RacesPage } from '../pages/races/races';
+import { RacesPage } from '../pages/race-list/race-list';
 import { DuvCupPage } from '../pages/duv-cup/duv-cup';
 import { RunnerDetailsPage } from '../pages/runner-details/runner-details';
+import { RunnerListPage } from '../pages/runner-list/runner-list';
 import { RaceDetailsPage } from '../pages/race-details/race-details';
 import { ImpressumPage } from '../pages/impressum/impressum';
 
@@ -21,6 +22,7 @@ import { ImpressumPage } from '../pages/impressum/impressum';
     SearchPage,
     RacesPage,
     DuvCupPage,
+    RunnerListPage,
     RunnerDetailsPage,
     RaceDetailsPage,
     ImpressumPage
@@ -37,6 +39,7 @@ import { ImpressumPage } from '../pages/impressum/impressum';
     SearchPage,
     RacesPage,
     DuvCupPage,
+    RunnerListPage,
     RunnerDetailsPage,
     RaceDetailsPage,
     ImpressumPage

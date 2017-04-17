@@ -1,0 +1,34 @@
+{"runners":[{
+	"id": 1,
+	"firstname": "Ingo",
+	"lastname":"Schulze",
+	"age":67,
+	"racecount": 27,
+	"races_since": 1983,
+	"km_sum": 17391,
+	"last_races": [{
+		"race_id": 2811,
+		"race_date": "130816",
+		"race_name": "Mauerweglauf",
+		"race_distance": 161.1
+	},
+	{
+		"race_id": 2812,
+		"race_date": "030716",
+		"race_name": "Thüringen Ultra",
+		"race_distance": 100
+	},
+	{
+		"race_id": 2813,
+		"race_date": "100616",
+		"race_name": "Finowkanal",
+		"race_distance": 64
+	},
+	{
+		"race_id": 2814,
+		"race_date": "220515",
+		"race_name": "Rennsteiglauf",
+		"race_distance": 73.1
+	}]
+}]
+}

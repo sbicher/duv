@@ -7,14 +7,12 @@ import {RaceDetailsPage} from '../race-details/race-details'
 
 @Component({
   selector: 'page-races',
-  templateUrl: 'races.html',
+  templateUrl: 'race-list.html',
   providers: [CalendarService, Settings]
 })
 export class RacesPage {
 	private races : Array<Race>;
-	private maxResultCount: number; // TODO: save in Settings
-	
-	
+		
   constructor(public navCtrl: NavController, public navParams: NavParams,private settings:Settings, private calendarService: CalendarService) {
   	// TODO: 'loading....'-Icon
   	this.races = [];

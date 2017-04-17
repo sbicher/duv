@@ -5,7 +5,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
 import { SearchPage } from '../pages/search/search';
-import { RacesPage } from '../pages/races/races';
+import { RacesPage } from '../pages/race-list/race-list';
 import { DuvCupPage } from '../pages/duv-cup/duv-cup';
 import { ImpressumPage } from '../pages/impressum/impressum';
 
@@ -30,9 +30,6 @@ export class MyApp {
       { title: 'DUV-Cup / Bundesliga', component: DuvCupPage },
       { title: 'Impressum', component: ImpressumPage }
     ];
-
-    console.log('bin hier fertig');
-
   }
   
   initializeApp() {

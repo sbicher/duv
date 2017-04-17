@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Läuferliste</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+ <ion-list>
+ <ion-item-sliding *ngFor="let runner of runners">
+ 
+            <ion-item (click)="showRunnerDetails(runner)">
+                {{runner.label}}
+            </ion-item>
+        </ion-item-sliding>
+ 
+    </ion-list>
+</ion-content>

@@ -7,8 +7,18 @@
   </ion-navbar>
 </ion-header>
 <ion-content padding>
-<div>Vorname: {{runner.firstname}} </div>
-<div>Name: {{runner.lastname}} </div>
-<div>Alter: {{runner.age}} </div>
-
+<div>{{runner.firstname}} {{runner.lastname}}</div>
+<div>Geburtsjahr: {{runner.yearOfBirth}} </div>
+<div>Anzahl Ultras: {{runner.racecount}} </div>
+<div>läuft seit: {{runner.races_since}} </div>
+<div>km gesamt: {{runner.km_sum}} (durchschnittlich {{runner.km_sum_per_year}} km pro Jahr)</div>
+ <ion-list>
+ <ion-item-sliding *ngFor="let yearPerf of runner.yearPerfs">
+ 
+            <ion-item (click)="showYearDetails(yearPerf)">
+                <div>{{yearPerf.year}}: {{yearPerf.raceCount}} Einträge</div>
+            </ion-item>
+        </ion-item-sliding>
+ 
+    </ion-list>
 </ion-content>

@@ -16,6 +16,5 @@ export class RaceDetailsPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   		this.race = this.navParams.get("race");
-  		console.log("Race hier: " + this.race)
   }
 }
